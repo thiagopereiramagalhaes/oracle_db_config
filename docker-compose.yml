@@ -1,0 +1,12 @@
+services:
+  oracle_db:
+    image: container-registry.oracle.com/database/express:latest
+    container_name: oracle_db
+    ports:
+      - "1521:1521"
+    environment:
+      - ORACLE_PWD=1324
+      - ORACLE_USER=thiago
+      - ORACLE_USER_PASSWORD=1324
+    stdin_open: true
+    tty: true
